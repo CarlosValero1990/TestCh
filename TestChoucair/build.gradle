@@ -31,8 +31,10 @@ dependencies {
     implementation group: 'org.apache.poi', name: 'poi', version: '3.17'
     implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '3.17'
     implementation 'io.github.bonigarcia:webdrivermanager:5.5.0'
+    testImplementation("io.github.bonigarcia:webdrivermanager:5.5.3")
 
 }
+
 
 test {
     ignoreFailures = true
