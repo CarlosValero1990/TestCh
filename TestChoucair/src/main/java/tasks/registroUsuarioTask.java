@@ -22,6 +22,7 @@ public class registroUsuarioTask implements Task{
         try {
         dataExcel = datosExcel.readExcel("DataTest.xlsx", "Escenario1");
         actor.attemptsTo(
+                Click.on(INGRESO),
                 Enter.theValue(dataExcel.get(0).get("nombre")).into(NOMBRE),
                 Enter.theValue(dataExcel.get(0).get("apellido")).into(APELLIDO),
                 Enter.theValue(dataExcel.get(0).get("correo")).into(CORREO),

@@ -3,6 +3,7 @@ package userInterfaces;
 import net.serenitybdd.screenplay.targets.Target;
 
 public class registrarUsuario {
+    public static final Target INGRESO = Target.the("ingresar").locatedBy("//*[@class='unauthenticated-nav-bar__sign-up']");
     public static final Target NOMBRE = Target.the("nombre").locatedBy("//input[@id='firstName']");
     public static final Target APELLIDO = Target.the("apellido").locatedBy("//input[@id='lastName']");
     public static final Target CORREO = Target.the("correo").locatedBy("//input[@id='email']");
