@@ -26,7 +26,7 @@ public class registrarUsuarioStepDefinition {
     public void queElUsuarioIngresaALaPaginaPrincipal() {
         WebDriverManager.chromedriver().setup();
         OnStage.theActorCalled(constantes.ACTOR).wasAbleTo(
-                Open.url("https://utest.com/signup/personal")
+                Open.url("https://utest.com/")
         );
 
     }
